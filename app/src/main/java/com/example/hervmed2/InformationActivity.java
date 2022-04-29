@@ -15,14 +15,7 @@ import java.util.Objects;
 
 public class InformationActivity extends AppCompatActivity {
 
-    TextView contentText;
-
-    public void hideActionBarInFragment() {
-        ActionBar supportActionBar = ((AppCompatActivity) this).getSupportActionBar();
-        if (supportActionBar != null)
-            supportActionBar.hide();
-    }
-
+    TextView textView, textView2, textView3;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,16 +23,18 @@ public class InformationActivity extends AppCompatActivity {
         setTheme(R.style.Theme_Hervmed3);
         setContentView(R.layout.activity_information);
 
-        ImageButton backButton = (ImageButton) findViewById(R.id.backButtonXML);
-        backButton.setOnClickListener(view -> {
-            finish();
-        });
 
+        backButton();
 
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN); //enable full screen
         setTitle("");
 
+        initialize();
+
+    }
+
+    public void initialize(){
         Intent intent = getIntent();
         HerbItems herbItems = intent.getParcelableExtra("Example");
 
@@ -52,13 +47,13 @@ public class InformationActivity extends AppCompatActivity {
         ImageView imageView = findViewById(R.id.imageHerb);
         imageView.setImageResource(imageRes);
 
-        TextView textView = findViewById(R.id.titleHerb);
+        textView = findViewById(R.id.titleHerb);
         textView.setText(title);
 
-        TextView textView2 = findViewById(R.id.descriptionHerb);
+        textView2 = findViewById(R.id.descriptionHerb);
         textView2.setText(description);
 
-        TextView textView3 = findViewById(R.id.contentHerb);
+        textView3 = findViewById(R.id.contentHerb);
         if(textView.getText().toString().equals("Chamomile")){
             textView3.setText(R.string.chamomile_content);
         }
@@ -66,7 +61,14 @@ public class InformationActivity extends AppCompatActivity {
             textView3.setText(R.string.borage_content);
         }
 
+    }
 
+    public void backButton(){
+
+        ImageButton backButton = (ImageButton) findViewById(R.id.backButtonXML);
+        backButton.setOnClickListener(view -> {
+            finish();
+        });
 
     }
 }

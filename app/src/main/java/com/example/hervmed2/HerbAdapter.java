@@ -4,6 +4,8 @@ import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Filter;
+import android.widget.Filterable;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -11,10 +13,13 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
+import java.util.List;
 
-public class HerbAdapter extends RecyclerView.Adapter<HerbAdapter.HerbViewHolder> {
+public class HerbAdapter extends RecyclerView.Adapter<HerbAdapter.HerbViewHolder> implements Filterable{
     ArrayList<HerbItems> herbList;
+    List<HerbItems> herbItemsFull;
     private final OnNoteListenerHerb onNoteListenerHerb;
+
 
     public static class HerbViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
 
@@ -42,8 +47,9 @@ public class HerbAdapter extends RecyclerView.Adapter<HerbAdapter.HerbViewHolder
     }
 
     public HerbAdapter (ArrayList<HerbItems> herbItems, OnNoteListenerHerb onNoteListenerHerb){
-        herbList = herbItems;
+        this.herbList = herbItems;
         this.onNoteListenerHerb = onNoteListenerHerb;
+        herbItemsFull = new ArrayList<>(herbItems);
 
     }
 
@@ -76,5 +82,39 @@ public class HerbAdapter extends RecyclerView.Adapter<HerbAdapter.HerbViewHolder
         void onNoteClick(int position);
     }
 
+    @Override
+    public Filter getFilter() {
+        return herbFilter;
+    }
+
+    private final Filter herbFilter = new Filter() {
+        @Override
+        protected FilterResults performFiltering(CharSequence charSequence) {
+            List<HerbItems> filteredHerbs = new ArrayList<>();
+
+            if(charSequence == null || charSequence.length() == 0){
+                filteredHerbs.addAll(herbItemsFull);
+            } else {
+                String filterPattern = charSequence.toString().toLowerCase().trim();
+
+                for (HerbItems items : herbItemsFull){
+                    if (items.getTitle().toLowerCase().contains(filterPattern)){
+                        filteredHerbs.add(items);
+                    }
+                }
+            }
+            FilterResults results = new FilterResults();
+            results.values = filteredHerbs;
+
+            return results;
+        }
+
+        @Override
+        protected void publishResults(CharSequence charSequence, FilterResults filterResults) {
+            herbList.clear();
+            herbList.addAll((List) filterResults.values);
+            notifyDataSetChanged();
+        }
+    };
 
 }

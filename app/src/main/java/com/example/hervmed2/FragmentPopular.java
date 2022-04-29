@@ -5,18 +5,13 @@ import android.os.Bundle;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.appcompat.app.ActionBar;
-import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
-import android.widget.Toolbar;
 
 import java.util.ArrayList;
 
@@ -29,9 +24,10 @@ public class FragmentPopular extends Fragment implements HerbAdapter.OnNoteListe
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view = LayoutInflater.from(getContext()).inflate(R.layout.activity_popular, container, false);
+        View view = LayoutInflater.from(getContext()).inflate(R.layout.activity_recyclerview_container, container, false);
 
-        RecyclerView popularRecView = view.findViewById(R.id.popularRecView);
+
+        RecyclerView popularRecView = view.findViewById(R.id.reyclerViewContainer);
         popularRecView.setLayoutManager(new LinearLayoutManager(getContext()));
         HerbAdapter hAdapter = new HerbAdapter(initHerb(), this);
         popularRecView.setAdapter(hAdapter);

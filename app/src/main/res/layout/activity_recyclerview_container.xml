@@ -5,10 +5,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/parent"
-    tools:context=".PopularActivity">
+    tools:context=".RecyclerViewContainer">
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/popularRecView"
+        android:id="@+id/reyclerViewContainer"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="45dp"

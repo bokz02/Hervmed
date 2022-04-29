@@ -13,7 +13,7 @@
             android:name=".InformationActivity"
             android:exported="false" />
         <activity
-            android:name=".PopularActivity"
+            android:name=".RecyclerViewContainer"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

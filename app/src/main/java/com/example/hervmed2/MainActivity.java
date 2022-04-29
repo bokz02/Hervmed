@@ -3,35 +3,18 @@ package com.example.hervmed2;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.coordinatorlayout.widget.CoordinatorLayout;
-import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.annotation.SuppressLint;
-import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
-import android.content.Intent;
-import android.graphics.drawable.ColorDrawable;
-import android.graphics.drawable.Drawable;
-import android.text.Html;
-import android.view.View;
-import android.view.Window;
-import android.view.Menu;
-import android.view.MenuInflater;
 import android.view.WindowManager;
 import android.os.Bundle;
 import android.view.MenuItem;
-import android.widget.Button;
-import android.widget.ImageButton;
-import android.widget.Toast;
-import android.widget.Toolbar;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationBarView;
-
-import java.util.Objects;
 
 public class MainActivity extends AppCompatActivity{
 
@@ -46,14 +29,6 @@ public class MainActivity extends AppCompatActivity{
                 .replace(R.id.fragment_Container, fragment)
                 .commit();
     }//FRAGMENT LOADER
-
-
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        MenuInflater inflater = getMenuInflater();
-        inflater.inflate(R.menu.settings_button, menu);
-        return true;
-    }
 
 
     public void hideActionBarInFragment() {
@@ -89,7 +64,7 @@ public class MainActivity extends AppCompatActivity{
 
 
         bottomNavigationView = (BottomNavigationView) findViewById(R.id.bottomNavigation);
-        popularRecView = (RecyclerView) findViewById(R.id.popularRecView);
+        popularRecView = (RecyclerView) findViewById(R.id.reyclerViewContainer);
 
         fragmentLoader(new Fragment1());
 

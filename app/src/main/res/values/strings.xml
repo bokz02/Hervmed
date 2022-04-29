@@ -1,4 +1,17 @@
 <resources>
+    
+    <string-array name="DidYouKnow">
+        <item>If onions make you cry when you chop them, it’s because they give off sulphenic acid, a serious irritant, when you cut them.</item>
+        <item>Some believe that oregano also helps ease the process of letting go – so it’s no surprise that a pizza after a break-up is often just the ticket.</item>
+        <item>Thyme, a fresh herb with a slight flavor of mint, is often used as a seasoning for fish, chicken or stuffing.</item>
+        <item>Rosemary, is a culinary plant with leaves that are similar to needles. Crushing the needles into a recipe gives it an instant pine flavor.</item>
+        <item>Oregano is a strong, spicy, fresh tasting herb that is mostly associated with Italian food like pizza and spaghetti sauce.</item>
+        <item>Herbs can be grown in the wild, in a garden or flower bed, or even in your house.</item>
+        <item>Herbs can be used fresh or dried. Some herbs have a stronger flavor when they are dried, but others have a stronger flavor when fresh.</item>
+        <item>Onions are one of the oldest foods known to the human race.</item>
+        <item>Sweet potatoes are one of the healthiest foods we can eat, as long as they aren’t covered in sugar and marshmallows.</item>
+        <item>The word “herb” comes from the Latin word herba, meaning grass, green stalks, or blades.</item>
+    </string-array>
     <string name="app_name">Hervmed2</string>
 
     <string name="chamomile_content"><b>Chamomile</b> (American English) or camomile (British English; see spelling differences) (/ˈkæməmaɪl, -miːl/ <i>KAM-ə-myle</i> or <i>KAM-ə-meel</i>), is the common name for several daisy-like plants of the family Asteraceae.\n\n Two of the species, <i>Matricaria recutita </i>, and  <i>Anthemis nobilis </i> are commonly used to make herbal infusions for beverages.\n\n There is insufficient scientific evidence that consuming chamomile in foods or beverages has any beneficial effect on health.\n\n<b>Benefits and its use</b>\nThe flowers are most often used to make tea, but the leaves may also be dried and used for making tea, medicinal extracts, or topical compresses.

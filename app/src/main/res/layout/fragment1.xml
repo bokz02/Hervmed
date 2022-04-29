@@ -69,7 +69,6 @@
         </RelativeLayout>
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/didyouknowwhite"
             android:layout_width="match_parent"
             android:layout_height="70dp"
             android:layout_alignParentBottom="true"
@@ -80,6 +79,7 @@
             app:cardElevation="10dp">
 
             <TextView
+                android:id="@+id/textViewDidYouKnow"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_margin="10dp"
@@ -260,22 +260,7 @@
         </RelativeLayout>
     </androidx.cardview.widget.CardView>
 
-
-
-
 </RelativeLayout>
-
-    <com.google.android.material.appbar.MaterialToolbar
-        android:id="@+id/settingsButton"
-        android:layout_width="wrap_content"
-        android:layout_height="50dp"
-        android:layout_alignParentRight="true"
-        android:layout_marginStart="355dp"
-        android:layout_marginTop="3dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:menu="@menu/settings_button" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 

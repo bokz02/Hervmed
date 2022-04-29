@@ -4,34 +4,5 @@
 
 
 
-    <item android:title="Settings">
-        <menu>
-            <item android:id="@+id/Music"
-                android:title="Music: On"
-                app:showAsAction="never"
-                />
-
-            <item android:id="@+id/Sound"
-                android:title="Sound effects: On"
-                app:showAsAction="never"
-                />
-
-            <item android:id="@+id/nightMode"
-                android:title="Night mode: On"
-                app:showAsAction="never"
-                />
-
-        </menu>
-    </item>
-
-    <item android:id="@+id/rate"
-        android:title="Rate us"
-        app:showAsAction="never"
-        />
-
-    <item
-        android:id="@+id/about"
-        android:title="About"
-        app:showAsAction="never"/>
 
 </menu>
