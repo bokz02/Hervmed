@@ -21,15 +21,14 @@
         android:layout_height="match_parent" />
 
 
-        <com.google.android.material.bottomnavigation.BottomNavigationView
-            android:id="@+id/bottomNavigation"
-            android:layout_centerHorizontal="true"
-            android:layout_alignBottom="@+id/fragment_Container"
-            android:layout_width="wrap_content"
-            android:layout_height="50dp"
-            android:background="@color/white"
-            app:layout_behavior="com.google.android.material.behavior.HideBottomViewOnScrollBehavior"
-            app:menu="@menu/menu" />
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigation"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignBottom="@+id/fragment_Container"
+        android:layout_centerHorizontal="true"
+        android:background="@color/white"
+        app:menu="@menu/menu" />
 
 
 

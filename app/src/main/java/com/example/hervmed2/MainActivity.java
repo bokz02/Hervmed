@@ -86,11 +86,12 @@ public class MainActivity extends AppCompatActivity{
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN); //enable full screen
 
-        fragmentLoader(new Fragment1());
+
 
         bottomNavigationView = (BottomNavigationView) findViewById(R.id.bottomNavigation);
         popularRecView = (RecyclerView) findViewById(R.id.popularRecView);
 
+        fragmentLoader(new Fragment1());
 
         //SWITCHING DIFFERENT FRAGMENTS
         bottomNavigationView.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
@@ -113,7 +114,6 @@ public class MainActivity extends AppCompatActivity{
                 return true;
             }
         });
-
 
 
 
