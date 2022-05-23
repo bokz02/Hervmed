@@ -66,8 +66,8 @@ public class Fragment2 extends Fragment implements HerbAdapter.OnNoteListenerHer
     }
 
     private ArrayList<HerbItems> initHerb(){
-
         herbItems.add(new HerbItems(R.drawable.borage, "Borage", "Borago officinalis"));
+        herbItems.add(new HerbItems(R.drawable.chamomile2, "Chamomile", "Matricaria chamomilla"));
         herbItems.add(new HerbItems(R.drawable.echinacea, "Echinacea", "Echinacea purpurea"));
         herbItems.add(new HerbItems(R.drawable.elderberry, "Elderberry", "Sambucus"));
         herbItems.add(new HerbItems(R.drawable.ginger, "Ginger", "Zingiber officinale"));

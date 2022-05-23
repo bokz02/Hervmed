@@ -8,3 +8,4 @@ dependencyResolutionManagement {
 }
 rootProject.name = "Hervmed2"
 include ':app'
+include ':lib'
