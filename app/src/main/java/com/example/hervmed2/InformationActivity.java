@@ -40,6 +40,7 @@ public class InformationActivity extends AppCompatActivity {
 
 
         int imageRes = herbItems.getImgResource();
+        int content = herbItems.getContent();
         String title = herbItems.getTitle();
         String description = herbItems.getDescription();
 
@@ -54,12 +55,15 @@ public class InformationActivity extends AppCompatActivity {
         textView2.setText(description);
 
         textView3 = findViewById(R.id.contentHerb);
-        if(textView.getText().toString().equals("Chamomile")){
-            textView3.setText(R.string.chamomile_content);
-        }
-        else if (textView.getText().toString().equals("Borage")){
-            textView3.setText(R.string.borage_content);
-        }
+        textView3.setText(content);
+
+//        textView3 = findViewById(R.id.contentHerb);
+//        if(textView.getText().toString().equals("Chamomile")){
+//            textView3.setText(R.string.chamomile_content);
+//        }
+//        else if (textView.getText().toString().equals("Borage")){
+//            textView3.setText(R.string.borage_content);
+//        }
 
     }
 

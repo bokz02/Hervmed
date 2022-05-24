@@ -19,7 +19,6 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="460dp"
-        android:padding="5dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/imageHerb">
@@ -30,6 +29,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:text="Title of item"
+
             android:textSize="30sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
@@ -52,7 +52,7 @@
             android:id="@+id/scrollView2"
             android:layout_width="match_parent"
             android:layout_height="400dp"
-            android:padding="10dp"
+            android:paddingHorizontal="10dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/descriptionHerb">
@@ -67,9 +67,8 @@
                     android:id="@+id/contentHerb"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:paddingEnd="5dp"
-                    android:text="@string/chamomile_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Content"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/descriptionHerb" />
