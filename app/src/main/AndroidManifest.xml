@@ -13,9 +13,6 @@
             android:name=".InformationActivity"
             android:exported="false" />
         <activity
-            android:name=".RecyclerViewContainer"
-            android:exported="false" />
-        <activity
             android:name=".MainActivity"
             android:exported="true"
             android:theme="@style/hervmed">

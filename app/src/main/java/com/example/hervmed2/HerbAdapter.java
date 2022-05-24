@@ -23,7 +23,7 @@ public class HerbAdapter extends RecyclerView.Adapter<HerbAdapter.HerbViewHolder
 
     public static class HerbViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
 
-        TextView textView1, textView2;
+        TextView textView1, textView2, textView3;
         ImageView imageView;
         OnNoteListenerHerb onNoteListenerHerb;
 
@@ -33,6 +33,7 @@ public class HerbAdapter extends RecyclerView.Adapter<HerbAdapter.HerbViewHolder
 
             textView1 = itemView.findViewById(R.id.title);
             textView2 = itemView.findViewById(R.id.description);
+            textView3 = itemView.findViewById(R.id.historyText);
             imageView = itemView.findViewById(R.id.imageView);
 
             this.onNoteListenerHerb = onNoteListenerHerb;
@@ -69,6 +70,7 @@ public class HerbAdapter extends RecyclerView.Adapter<HerbAdapter.HerbViewHolder
 
         holder.textView1.setText(herbList.get(position).getTitle());
         holder.textView2.setText(herbList.get(position).getDescription());
+        holder.textView3.setText(herbList.get(position).getHistory());
         holder.imageView.setImageResource(herbList.get(position).getImgResource());
 
     }

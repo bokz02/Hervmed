@@ -4,20 +4,21 @@ import android.os.Parcel;
 import android.os.Parcelable;
 
 public class HerbItems implements Parcelable {
-    int imgResource;
+    int imgResource, history;
     String title, description;
 
-    public HerbItems(int imgResource, String text, String text2){
+    public HerbItems(int imgResource, String text, String text2, int text3){
         this.imgResource = imgResource;
         this.title = text;
         this.description = text2;
-
+        this.history = text3;
     }
 
     protected HerbItems(Parcel in) {
         imgResource = in.readInt();
         title = in.readString();
         description = in.readString();
+        history = in.readInt();
 
     }
 
@@ -45,6 +46,9 @@ public class HerbItems implements Parcelable {
         return description;
     }
 
+    public int getHistory(){
+        return history;
+    }
 
     @Override
     public int describeContents() {
@@ -56,5 +60,6 @@ public class HerbItems implements Parcelable {
         parcel.writeInt(imgResource);
         parcel.writeString(title);
         parcel.writeString(description);
+        parcel.writeInt(history);
     }
 }
