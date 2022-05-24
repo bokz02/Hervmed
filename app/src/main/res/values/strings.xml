@@ -1,5 +1,5 @@
 <resources>
-
+    
     <string-array name="DidYouKnow">
         <item>If onions make you cry when you chop them, it’s because they give off sulphenic acid, a serious irritant, when you cut them.</item>
         <item>Some believe that oregano also helps ease the process of letting go – so it’s no surprise that a pizza after a break-up is often just the ticket.</item>
@@ -22,11 +22,10 @@ Yet, a few small human studies suggest that chamomile treats diarrhea, emotional
 \n\nChamomile is safe for most people but may cause an allergic reaction — especially if you’re allergic to similar plants, such as daisies, ragweed, or marigolds.\n\n</string>
 
 
+
     <string name="borage_content">Also known as a starflower, is an annual herb in the flowering plant family Boraginaceae. It is native to the Mediterranean region, and has naturalized in many other locales.
 It grows satisfactorily in gardens in most of Europe, such as Denmark, France, Germany, and the United Kingdom, remaining in the garden from year to year by self-seeding. The leaves are edible and the plant is grown in gardens for that purpose in some parts of Europe.
 The plant is also commercially cultivated for borage seed oil extracted from its seeds.
 The plant contains pyrrolizidine alkaloids, some of which are hepatotoxic, mutagenic, and carcinogenic (see below under Phytochemistry). \n\n
 </string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

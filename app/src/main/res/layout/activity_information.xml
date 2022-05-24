@@ -8,9 +8,6 @@
     android:id="@+id/parent">
 
 
-
-
-
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="230dp"
@@ -51,47 +48,14 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/titleHerb" />
 
-
-        <com.google.android.material.tabs.TabLayout
-            android:id="@+id/tabLayout"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/white"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/descriptionHerb"
-            app:tabGravity="center"
-            app:tabMode="fixed"
-            app:tabSelectedTextColor="@color/blueMain"
-            app:tabTextColor="@color/tabLayout_color">
-
-<!--            <com.google.android.material.tabs.TabItem-->
-<!--                android:layout_width="wrap_content"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:text="History" />-->
-
-<!--            <com.google.android.material.tabs.TabItem-->
-<!--                android:layout_width="wrap_content"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:text="Benefits" />-->
-
-<!--            <com.google.android.material.tabs.TabItem-->
-<!--                android:layout_width="wrap_content"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:text="How to use" />-->
-        </com.google.android.material.tabs.TabLayout>
-
         <androidx.core.widget.NestedScrollView
             android:id="@+id/scrollView2"
             android:layout_width="match_parent"
-            android:layout_height="350dp"
+            android:layout_height="400dp"
             android:padding="10dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tabLayout">
-
-
-
+            app:layout_constraintTop_toBottomOf="@+id/descriptionHerb">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -99,40 +63,18 @@
                 android:orientation="vertical">
 
 
-
-
-                <androidx.coordinatorlayout.widget.CoordinatorLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="350dp">
-
-                    <androidx.fragment.app.FragmentContainerView
-                        android:id="@+id/fragmentContainerHistory"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"/>
-
-
-                    <androidx.viewpager2.widget.ViewPager2
-                        android:id="@+id/viewPager"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"/>
-
-                </androidx.coordinatorlayout.widget.CoordinatorLayout>
-
-
-<!--                <TextView-->
-<!--                    android:id="@+id/contentHerb"-->
-<!--                    android:layout_width="wrap_content"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:layout_marginTop="10dp"-->
-<!--                    android:paddingEnd="5dp"-->
-<!--                    android:text="@string/chamomile_content"-->
-<!--                    app:layout_constraintEnd_toEndOf="parent"-->
-<!--                    app:layout_constraintStart_toStartOf="parent"-->
-<!--                    app:layout_constraintTop_toBottomOf="@+id/descriptionHerb" />-->
+                <TextView
+                    android:id="@+id/contentHerb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:paddingEnd="5dp"
+                    android:text="@string/chamomile_content"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/descriptionHerb" />
 
             </LinearLayout>
-
 
         </androidx.core.widget.NestedScrollView>
 

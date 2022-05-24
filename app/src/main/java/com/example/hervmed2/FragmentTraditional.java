@@ -33,8 +33,8 @@ public class FragmentTraditional extends Fragment implements HerbAdapter.OnNoteL
     }
 
     private ArrayList<HerbItems> initHerb(){
-//        herbItems.add(new HerbItems(R.drawable.borage, "Borage", "Borago officinalis"));
-//        herbItems.add(new HerbItems(R.drawable.chamomile2, "Chamomile", "This is sample description"));
+        herbItems.add(new HerbItems(R.drawable.borage, "Borage", "Borago officinalis"));
+        herbItems.add(new HerbItems(R.drawable.chamomile2, "Chamomile", "This is sample description"));
       return herbItems;
     }
 
