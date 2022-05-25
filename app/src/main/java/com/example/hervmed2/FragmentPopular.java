@@ -41,10 +41,10 @@ public class FragmentPopular extends Fragment implements HerbAdapter.OnNoteListe
         herbItems.add(new HerbItems(R.drawable.elderberry, "Elderberry", "Sambucus",R.string.elderberry_content));
         herbItems.add(new HerbItems(R.drawable.ginger, "Ginger", "Zingiber officinale", R.string.ginger_content));
         herbItems.add(new HerbItems(R.drawable.ginkgo_biloba, "Ginkgo", "Ginkgo biloba", R.string.ginkgo_content));
-//        herbItems.add(new HerbItems(R.drawable.ginseng, "Ginseng", "Panax ginseng"));
-//        herbItems.add(new HerbItems(R.drawable.st_johns_wort, "St. John's Wort", "Hypericum perforatum"));
-//        herbItems.add(new HerbItems(R.drawable.turmeric, "Turmeric", "Curcuma longa"));
-//        herbItems.add(new HerbItems(R.drawable.valerian, "Valerian", "Valeriana officinalis"));
+        herbItems.add(new HerbItems(R.drawable.ginseng, "Ginseng", "Panax ginseng", R.string.ginseng_content));
+        herbItems.add(new HerbItems(R.drawable.st_johns_wort, "St. John's Wort", "Hypericum perforatum",R.string.st_johns_wort_content));
+        herbItems.add(new HerbItems(R.drawable.turmeric, "Turmeric", "Curcuma longa", R.string.turmeric_content));
+        herbItems.add(new HerbItems(R.drawable.valerian, "Valerian", "Valeriana officinalis",R.string.valerian_content));
 
 
         return herbItems;

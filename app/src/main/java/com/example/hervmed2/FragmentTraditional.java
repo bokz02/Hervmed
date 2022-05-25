@@ -33,8 +33,16 @@ public class FragmentTraditional extends Fragment implements HerbAdapter.OnNoteL
     }
 
     private ArrayList<HerbItems> initHerb(){
-//        herbItems.add(new HerbItems(R.drawable.borage, "Borage", "Borago officinalis"));
-//        herbItems.add(new HerbItems(R.drawable.chamomile2, "Chamomile", "This is sample description"));
+        herbItems.add(new HerbItems(R.drawable.acapulco, "Acapulco", "Senna Alata",R.string.acapulco_content));
+        herbItems.add(new HerbItems(R.drawable.bitter_melon, "Bitter melon", "Momordica charantia", R.string.bitter_melon_content));
+        herbItems.add(new HerbItems(R.drawable.chaste_tree, "Chaste tree", "Vitex agnus-castus", R.string.chaste_tree_content));
+        herbItems.add(new HerbItems(R.drawable.fukien_tea_tree, "Fukien tea tree", "Ehretia microphylla", R.string.fukien_tea_tree_content));
+        herbItems.add(new HerbItems(R.drawable.garlic, "Garlic", "Allium sativum", R.string.garlic_content));
+        herbItems.add(new HerbItems(R.drawable.guava, "Guava", "Psidium guajava", R.string.guava_content));
+        herbItems.add(new HerbItems(R.drawable.pepper_elder, "Pepper elder", "Peperomia pellucida", R.string.pepper_elder_content));
+        herbItems.add(new HerbItems(R.drawable.rangoon_creeper, "Rangoon creeper", "Combretum indicum", R.string.rangoon_creeper_content));
+        herbItems.add(new HerbItems(R.drawable.sambong, "Sambong", "Blumea balsamifera", R.string.sambong_content));
+        herbItems.add(new HerbItems(R.drawable.yerba_buena, "Yerba buena", "Combretum indicum", R.string.sambong_content));
       return herbItems;
     }
 

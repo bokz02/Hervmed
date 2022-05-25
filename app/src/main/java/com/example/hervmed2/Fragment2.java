@@ -72,7 +72,7 @@ public class Fragment2 extends Fragment implements HerbAdapter.OnNoteListenerHer
         herbItems.add(new HerbItems(R.drawable.elderberry, "Elderberry", "Sambucus",R.string.elderberry_content));
         herbItems.add(new HerbItems(R.drawable.ginger, "Ginger", "Zingiber officinale",R.string.ginger_content));
         herbItems.add(new HerbItems(R.drawable.ginkgo_biloba, "Ginkgo", "Ginkgo biloba",R.string.ginkgo_content));
-//        herbItems.add(new HerbItems(R.drawable.ginseng, "Ginseng", "Panax ginseng"));
+        herbItems.add(new HerbItems(R.drawable.ginseng, "Ginseng", "Panax ginseng",R.string.ginseng_content));
 //        herbItems.add(new HerbItems(R.drawable.st_johns_wort, "St. John's Wort", "Hypericum perforatum"));
 //        herbItems.add(new HerbItems(R.drawable.turmeric, "Turmeric", "Curcuma longa"));
 //        herbItems.add(new HerbItems(R.drawable.valerian, "Valerian", "Valeriana officinalis"));
