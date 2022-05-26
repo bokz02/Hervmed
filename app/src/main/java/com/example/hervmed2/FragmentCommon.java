@@ -3,8 +3,6 @@ package com.example.hervmed2;
 import android.content.Intent;
 import android.os.Bundle;
 
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -15,14 +13,15 @@ import android.view.ViewGroup;
 
 import java.util.ArrayList;
 
-public class FragmentRare extends Fragment implements HerbAdapter.OnNoteListenerHerb {
+
+public class FragmentCommon extends Fragment implements HerbAdapter.OnNoteListenerHerb{
 
     ArrayList<HerbItems> herbItems = new ArrayList<>();
 
-    @Nullable
     @Override
-    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view = LayoutInflater.from(getContext()).inflate(R.layout.activity_recyclerview_container, container, false);
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+        View view = inflater.inflate(R.layout.activity_recyclerview_container, container, false);
 
         RecyclerView popularRecView = view.findViewById(R.id.reyclerViewContainer);
         popularRecView.setLayoutManager(new LinearLayoutManager(getContext()));
@@ -48,7 +47,6 @@ public class FragmentRare extends Fragment implements HerbAdapter.OnNoteListener
 
         return herbItems;
     }
-
 
     @Override
     public void onNoteClick(int position) {

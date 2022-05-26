@@ -46,7 +46,6 @@ public class FragmentPopular extends Fragment implements HerbAdapter.OnNoteListe
         herbItems.add(new HerbItems(R.drawable.turmeric, "Turmeric", "Curcuma longa", R.string.turmeric_content));
         herbItems.add(new HerbItems(R.drawable.valerian, "Valerian", "Valeriana officinalis",R.string.valerian_content));
 
-
         return herbItems;
     }
 

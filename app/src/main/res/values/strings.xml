@@ -1,5 +1,5 @@
 <resources>
-    
+
     <string-array name="DidYouKnow">
         <item>If onions make you cry when you chop them, it’s because they give off sulphenic acid, a serious irritant, when you cut them.</item>
         <item>Some believe that oregano also helps ease the process of letting go – so it’s no surprise that a pizza after a break-up is often just the ticket.</item>
@@ -14,23 +14,18 @@
     </string-array>
     <string name="app_name">Hervmed</string>
 
-    <string name="chamomile_content"><font size = "14"><b>Chamomile</b> (American English) or camomile (British English; see spelling differences) (/ˈkæməmaɪl, -miːl/ <i>KAM-ə-myle</i> or <i>KAM-ə-meel</i>), is the common name for several daisy-like plants of the family Asteraceae.\n\n Two of the species, <i>Matricaria recutita </i>, and  <i>Anthemis nobilis </i> are commonly used to make herbal infusions for beverages.\n\nThere is insufficient scientific evidence that consuming chamomile in foods or beverages has any beneficial effect on health.</font>
-        \n\n<b><font size = "18">How to use</font></b>
-        \n<font size = "14">Infuse chamomile flowers in almond oil. Use the chamomile oil for salads or fish dishes, or mix it in mayonnaise to add flavor to sandwiches.
+    <string name="chamomile_content"><font size="14"><b>Chamomile</b> (American English) or camomile (British English; see spelling differences) (/ˈkæməmaɪl, -miːl/ <i>KAM-ə-myle</i> or <i>KAM-ə-meel</i>), is the common name for several daisy-like plants of the family Asteraceae.\n\n Two of the species, <i>Matricaria recutita </i>, and  <i>Anthemis nobilis </i> are commonly used to make herbal infusions for beverages.\n\nThere is insufficient scientific evidence that consuming chamomile in foods or beverages has any beneficial effect on health.</font>
+        \n\n<b><font size="18">How to use</font></b>
+        \n<font size="14">Infuse chamomile flowers in almond oil. Use the chamomile oil for salads or fish dishes, or mix it in mayonnaise to add flavor to sandwiches.
             Add a few blooms to add color and flavor to a fresh green salad.
             You can also use leaves, although they may have a somewhat bitter flavor.</font>
-        \n\n<b><font size = "18">Benefits</font></b><font size = "14">\nThe flowers are most often used to make tea, but the leaves may also be dried and used for making tea, medicinal extracts, or topical compresses.
+        \n\n<b><font size="18">Benefits</font></b><font size="14">\nThe flowers are most often used to make tea, but the leaves may also be dried and used for making tea, medicinal extracts, or topical compresses.
 \n\nFor thousands of years, chamomile has been used as a remedy for nausea, diarrhea, constipation, stomach pain, urinary tract infections, wounds, and upper respiratory infections.
             \n\nYet, a few small human studies suggest that chamomile treats diarrhea, emotional disturbances as well as cramping associated with premenstrual syndrome (PMS), and pain and inflammation linked to osteoarthritis.\n</font>
-    \n<b><font size = "18">Side effects</font></b>
-    <font size = "14">\nChamomile contains a small amount of coumarin, which may have very mild blood thinning effects, but usually just in high doses for long periods of time. Stop using chamomile two weeks before surgery due to concerns about its possible interactions with anesthetic drugs.</font>
+    \n<b><font size="18">Side effects</font></b>
+    <font size="14">\nChamomile contains a small amount of coumarin, which may have very mild blood thinning effects, but usually just in high doses for long periods of time. Stop using chamomile two weeks before surgery due to concerns about its possible interactions with anesthetic drugs.</font>
     \n\n</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
-
-
-    <string name="borage_content">Also known as a starflower, is an annual herb in the flowering plant family Boraginaceae. It is native to the Mediterranean region, and has naturalized in many other locales.
-It grows satisfactorily in gardens in most of Europe, such as Denmark, France, Germany, and the United Kingdom, remaining in the garden from year to year by self-seeding. The leaves are edible and the plant is grown in gardens for that purpose in some parts of Europe.
-The plant is also commercially cultivated for borage seed oil extracted from its seeds.
-The plant contains pyrrolizidine alkaloids, some of which are hepatotoxic, mutagenic, and carcinogenic (see below under Phytochemistry). \n\n
-</string>
 </resources>

@@ -42,7 +42,7 @@ public class FragmentTraditional extends Fragment implements HerbAdapter.OnNoteL
         herbItems.add(new HerbItems(R.drawable.pepper_elder, "Pepper elder", "Peperomia pellucida", R.string.pepper_elder_content));
         herbItems.add(new HerbItems(R.drawable.rangoon_creeper, "Rangoon creeper", "Combretum indicum", R.string.rangoon_creeper_content));
         herbItems.add(new HerbItems(R.drawable.sambong, "Sambong", "Blumea balsamifera", R.string.sambong_content));
-        herbItems.add(new HerbItems(R.drawable.yerba_buena, "Yerba buena", "Combretum indicum", R.string.sambong_content));
+        herbItems.add(new HerbItems(R.drawable.yerba_buena, "Yerba buena", "Combretum indicum", R.string.yerba_buena_content));
       return herbItems;
     }
 

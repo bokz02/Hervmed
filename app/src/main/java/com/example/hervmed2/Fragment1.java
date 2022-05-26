@@ -56,7 +56,7 @@ public class Fragment1 extends Fragment {
             public void onClick(View view) {
                 //Toast.makeText(getActivity(), "Traditional", Toast.LENGTH_SHORT).show();
 
-                getActivity().setTitle(Html .fromHtml("<font color = \"#FFFFFF\">" + "Traditional" + "</font>"));
+                getActivity().setTitle(Html .fromHtml("<font color = \"#FFFFFF\">" + "Traditional plants" + "</font>"));
 
                 Fragment fragment = new FragmentTraditional();
                 FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
@@ -77,7 +77,7 @@ public class Fragment1 extends Fragment {
             public void onClick(View view) {
                 //Toast.makeText(getActivity(), "Popular", Toast.LENGTH_SHORT).show();
 
-                getActivity().setTitle(Html.fromHtml("<font color = \"#FFFFFF\">" + "Popular" + "</font>"));
+                getActivity().setTitle(Html.fromHtml("<font color = \"#FFFFFF\">" + "Popular plants" + "</font>"));
 
                 Fragment fragment = new FragmentPopular();
                 FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
@@ -93,7 +93,14 @@ public class Fragment1 extends Fragment {
         btnRare.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //Toast.makeText(getActivity(), "Rare", Toast.LENGTH_SHORT).show();
+                getActivity().setTitle(Html.fromHtml("<font color = \"#FFFFFF\">" + "Rare plants" + "</font>"));
+
+                Fragment fragment = new FragmentRare();
+                FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
+                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+                fragmentTransaction.replace(R.id.fragment_Container, fragment);
+                fragmentTransaction.addToBackStack(null);
+                fragmentTransaction.commit();
 
             }
         });
@@ -103,7 +110,16 @@ public class Fragment1 extends Fragment {
         btnCommon.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(getActivity(), "Common", Toast.LENGTH_SHORT).show();
+
+                getActivity().setTitle(Html.fromHtml("<font color = \"#FFFFFF\">" + "Common plants" + "</font>"));
+
+                Fragment fragment = new FragmentCommon();
+                FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
+                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+                fragmentTransaction.replace(R.id.fragment_Container, fragment);
+                fragmentTransaction.addToBackStack(null);
+                fragmentTransaction.commit();
+
             }
         });
     }
@@ -112,7 +128,8 @@ public class Fragment1 extends Fragment {
         btnDrugs.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(getActivity(), "Drugs", Toast.LENGTH_SHORT).show();
+
+
             }
         });
     }
