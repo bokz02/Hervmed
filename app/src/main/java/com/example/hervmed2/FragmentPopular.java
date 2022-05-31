@@ -36,6 +36,7 @@ public class FragmentPopular extends Fragment implements HerbAdapter.OnNoteListe
     }
 
     private ArrayList<HerbItems> initHerb(){
+        herbItems.add(new HerbItems(R.drawable.borage, "Borage", "Borago officinalis",R.string.chamomile_content));
         herbItems.add(new HerbItems(R.drawable.chamomile2, "Chamomile", "Matricaria chamomilla", R.string.chamomile_content));
         herbItems.add(new HerbItems(R.drawable.echinacea, "Echinacea", "Echinacea purpurea", R.string.echinacea_content));
         herbItems.add(new HerbItems(R.drawable.elderberry, "Elderberry", "Sambucus",R.string.elderberry_content));

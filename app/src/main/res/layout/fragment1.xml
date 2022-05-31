@@ -2,81 +2,70 @@
 
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:id="@+id/main2">
+    android:id="@+id/main2"
+    android:background="@color/blueBackground">
 
 
-    
 
-<RelativeLayout
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:id="@+id/main"
-    android:background="@color/greenPastelDark">
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".385"/>
 
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".90"/>
 
-    <RelativeLayout
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".075"/>
 
-        android:layout_width="match_parent"
-        android:layout_height="360dp"
-        android:layout_above="@+id/green"
-        android:layout_marginBottom="330dp"
-        android:background="@drawable/home_blue_background">
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".925"/>
 
-        <ImageView
-            android:layout_width="220dp"
-            android:layout_height="140dp"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="15dp"
-            android:background="@drawable/hervmed2">
-
-        </ImageView>
-
-        <ImageView
-            android:layout_width="55dp"
-            android:layout_height="55dp"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginLeft="118dp"
-            android:layout_marginBottom="117dp"
-            android:background="@drawable/bulb2"
-            android:translationZ="91dp">
-
-        </ImageView>
-
-        <RelativeLayout
-            android:id="@+id/didyouknow"
-            android:layout_width="100dp"
-            android:layout_height="25dp"
-            android:layout_alignParentBottom="true"
-            android:layout_marginLeft="40dp"
-            android:layout_marginBottom="123dp"
-            android:background="@color/greenPastel"
-            android:translationZ="90dp">
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="220dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/hervmed2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:gravity="center"
-                android:text="Did you know?"
-                android:textSize="14sp"
-                android:textStyle="bold|italic">
-
-            </TextView>
-
-        </RelativeLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="120dp"
+        app:layout_constraintBottom_toTopOf="@+id/cardView2"
+        app:layout_constraintEnd_toEndOf="@id/guide4"
+        app:layout_constraintStart_toStartOf="@id/guide3"
+        android:layout_marginBottom="15dp">
 
         <androidx.cardview.widget.CardView
-            android:layout_width="match_parent"
+            android:id="@+id/cardView"
+            android:layout_width="0dp"
             android:layout_height="70dp"
-            android:layout_alignParentBottom="true"
-            android:layout_marginLeft="30dp"
-            android:layout_marginRight="30dp"
-            android:layout_marginBottom="65dp"
             app:cardCornerRadius="10dp"
-            app:cardElevation="10dp">
+            app:cardElevation="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent">
 
             <TextView
                 android:id="@+id/textViewDidYouKnow"
@@ -84,39 +73,68 @@
                 android:layout_height="match_parent"
                 android:layout_margin="10dp"
                 android:gravity="center"
-                android:text="If onions make you cry when you chop them, it’s because they give off sulphenic acid, a serious irritant, when you cut them."
-                android:textSize="14sp">
-
-            </TextView>
-
+                android:text="Text"
+                android:textSize="14sp"/>
 
         </androidx.cardview.widget.CardView>
 
-    </RelativeLayout>
+
+        <ImageView
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:background="@drawable/bulb2"
+            android:translationZ="91dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="85dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
 
-    <ImageView
-        android:id="@+id/green"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_alignParentBottom="true"
-        android:background="@color/greenPastelDark">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/didyouknow"
+            android:layout_width="100dp"
+            android:layout_height="25dp"
+            android:background="@color/greenPastel"
+            android:translationZ="90dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
 
-    </ImageView>
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Did you know?"
+                android:textSize="14sp"
+                android:textStyle="bold|italic"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
 
     <androidx.cardview.widget.CardView
-        android:layout_width="320dp"
-        android:layout_height="350dp"
-        android:layout_above="@id/green"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginEnd="30dp"
-        android:layout_marginBottom="30dp"
-        android:layout_centerHorizontal="true"
+        android:id="@+id/cardView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         app:cardCornerRadius="10dp"
-        app:cardElevation="10dp">
+        app:cardElevation="10dp"
+        app:layout_constraintBottom_toBottomOf="@id/guide2"
+        app:layout_constraintLeft_toLeftOf="@id/guide3"
+        app:layout_constraintRight_toRightOf="@id/guide4"
+        app:layout_constraintTop_toTopOf="@id/guide1">
 
-        <RelativeLayout
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/whiteParent"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
@@ -125,9 +143,13 @@
                 android:id="@+id/leaf2"
                 android:layout_width="85dp"
                 android:layout_height="85dp"
-                android:layout_centerHorizontal="true"
                 android:layout_marginTop="10dp"
-                android:background="@drawable/leaf1">
+                android:background="@drawable/leaf1"
+                app:layout_constraintEnd_toStartOf="@+id/leaf3"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/heart1"
+                app:layout_constraintTop_toTopOf="parent">
 
             </ImageButton>
 
@@ -136,9 +158,10 @@
                 android:layout_width="85dp"
                 android:layout_height="85dp"
                 android:layout_marginTop="10dp"
-                android:layout_marginRight="10dp"
-                android:layout_toLeftOf="@id/leaf2"
-                android:background="@drawable/heart">
+                android:layout_marginStart="20dp"
+                android:background="@drawable/heart"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
 
             </ImageButton>
 
@@ -146,122 +169,152 @@
                 android:id="@+id/leaf3"
                 android:layout_width="85dp"
                 android:layout_height="85dp"
-                android:layout_marginLeft="10dp"
                 android:layout_marginTop="10dp"
-                android:layout_toRightOf="@id/leaf2"
-                android:background="@drawable/leaf2"></ImageButton>
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/leaf2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
             <ImageButton
                 android:id="@+id/drug"
                 android:layout_width="85dp"
                 android:layout_height="85dp"
-                android:layout_centerInParent="true"
-                android:layout_marginTop="10dp"
-                android:background="@drawable/bottle1"></ImageButton>
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/bottle1"
+                android:layout_marginTop="15dp"
+                app:layout_constraintEnd_toEndOf="@+id/leaf2"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/leaf2"
+                app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
             <ImageButton
                 android:id="@+id/leaf4"
                 android:layout_width="85dp"
                 android:layout_height="85dp"
-                android:layout_centerInParent="true"
-                android:layout_marginRight="10dp"
-                android:layout_toLeftOf="@+id/drug"
-                android:background="@drawable/leaf4"></ImageButton>
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/leaf4"
+                android:layout_marginTop="15dp"
+                app:layout_constraintEnd_toEndOf="@+id/heart1"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@+id/drug"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/heart1"
+                app:layout_constraintTop_toBottomOf="@+id/textView" />
 
             <ImageButton
                 android:id="@+id/poison"
                 android:layout_width="85dp"
                 android:layout_height="85dp"
-                android:layout_centerInParent="true"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"
-                android:layout_toRightOf="@+id/drug"
-                android:background="@drawable/poison1"></ImageButton>
+                android:layout_marginTop="15dp"
+                android:background="@drawable/poison1"
+                app:layout_constraintEnd_toEndOf="@+id/leaf3"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintLeft_toRightOf="@+id/drug"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/leaf3"
+                app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
             <ImageButton
                 android:id="@+id/edible"
                 android:layout_width="85dp"
                 android:layout_height="85dp"
-                android:layout_alignParentBottom="true"
-                android:layout_marginLeft="23dp"
-                android:layout_marginBottom="30dp"
-                android:background="@drawable/spoon3"></ImageButton>
+                android:layout_marginTop="15dp"
+                android:background="@drawable/spoon3"
+                app:layout_constraintEnd_toEndOf="@+id/leaf4"
+                app:layout_constraintStart_toStartOf="@+id/leaf4"
+                app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
             <TextView
+                android:id="@+id/textView"
                 android:layout_width="50dp"
                 android:layout_height="20dp"
-                android:layout_below="@id/heart1"
-                android:layout_marginLeft="40dp"
                 android:text="Popular"
-                android:textSize="14sp"></TextView>
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="@+id/heart1"
+                app:layout_constraintStart_toStartOf="@+id/heart1"
+                app:layout_constraintTop_toBottomOf="@id/heart1" />
 
             <TextView
+                android:id="@+id/textView2"
                 android:layout_width="80dp"
                 android:layout_height="20dp"
-                android:layout_below="@id/leaf2"
-                android:layout_centerHorizontal="true"
                 android:gravity="center"
                 android:text="Traditional"
-                android:textSize="14sp"></TextView>
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="@+id/leaf2"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/leaf2"
+                app:layout_constraintTop_toBottomOf="@id/leaf2" />
 
             <TextView
+                android:id="@+id/textView3"
                 android:layout_width="60dp"
                 android:layout_height="20dp"
-                android:layout_below="@id/leaf3"
-                android:layout_alignParentEnd="true"
-                android:layout_marginRight="35dp"
                 android:gravity="center"
                 android:text="Rare"
-                android:textSize="14sp"></TextView>
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="@+id/leaf3"
+                app:layout_constraintStart_toStartOf="@+id/leaf3"
+                app:layout_constraintTop_toBottomOf="@id/leaf3" />
 
             <TextView
+                android:id="@+id/textView4"
                 android:layout_width="60dp"
                 android:layout_height="20dp"
-                android:layout_below="@id/leaf4"
-                android:layout_alignParentStart="true"
-                android:layout_marginLeft="35dp"
                 android:gravity="center"
                 android:text="Common"
-                android:textSize="14sp"></TextView>
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="@+id/leaf4"
+                app:layout_constraintStart_toStartOf="@+id/leaf4"
+                app:layout_constraintTop_toBottomOf="@id/leaf4" />
 
             <TextView
+                android:id="@+id/textView5"
                 android:layout_width="wrap_content"
                 android:layout_height="20dp"
-                android:layout_below="@id/leaf4"
-                android:layout_centerHorizontal="true"
                 android:gravity="center"
-                android:text="Mind-Altering
-"
-                android:textSize="14sp"></TextView>
+                android:text="Mind-Altering"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="@+id/drug"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/drug"
+                app:layout_constraintTop_toBottomOf="@+id/drug" />
 
             <TextView
                 android:id="@+id/poisonous"
                 android:layout_width="90dp"
                 android:layout_height="20dp"
-                android:layout_below="@id/leaf4"
-                android:layout_alignParentEnd="true"
-                android:layout_marginRight="22dp"
                 android:gravity="center"
                 android:text="Toxic"
-                android:textSize="14sp"></TextView>
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="@+id/poison"
+                app:layout_constraintStart_toStartOf="@+id/poison"
+                app:layout_constraintTop_toBottomOf="@id/leaf4" />
 
             <TextView
+                android:id="@+id/textView6"
                 android:layout_width="60dp"
                 android:layout_height="20dp"
-                android:layout_alignParentBottom="true"
-                android:text="Edible"
-                android:layout_marginLeft="35dp"
-                android:layout_marginBottom="10dp"
                 android:gravity="center"
-                android:textSize="14sp">
+                android:text="Edible"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="@+id/edible"
+                app:layout_constraintStart_toStartOf="@+id/edible"
+                app:layout_constraintTop_toBottomOf="@+id/edible">
 
 
             </TextView>
 
-        </RelativeLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
 
-</RelativeLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 
