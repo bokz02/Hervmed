@@ -222,7 +222,7 @@
                 android:id="@+id/edible"
                 android:layout_width="85dp"
                 android:layout_height="85dp"
-                android:layout_marginTop="15dp"
+                android:layout_marginTop="10dp"
                 android:background="@drawable/spoon3"
                 app:layout_constraintEnd_toEndOf="@+id/leaf4"
                 app:layout_constraintStart_toStartOf="@+id/leaf4"
