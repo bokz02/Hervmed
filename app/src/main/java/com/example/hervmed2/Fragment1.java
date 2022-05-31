@@ -1,10 +1,7 @@
 package com.example.hervmed2;
 
 import android.annotation.SuppressLint;
-import android.content.Intent;
-import android.content.res.TypedArray;
 import android.os.Bundle;
-import android.provider.ContactsContract;
 import android.text.Html;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -12,7 +9,6 @@ import android.view.ViewGroup;
 import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
-import android.widget.Toolbar;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -43,7 +39,7 @@ public class Fragment1 extends Fragment {
          btnCommon();
          btnDrug();
          btnPoison();
-         btnEdiblee();
+         btnEdible();
          randomFacts();
 
         return v;
@@ -129,6 +125,14 @@ public class Fragment1 extends Fragment {
             @Override
             public void onClick(View view) {
 
+                getActivity().setTitle(Html.fromHtml("<font color = \"#FFFFFF\">" + "Mind-Altering plants" + "</font>"));
+
+                Fragment fragment = new FragmentAddictive();
+                FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
+                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+                fragmentTransaction.replace(R.id.fragment_Container, fragment);
+                fragmentTransaction.addToBackStack(null);
+                fragmentTransaction.commit();
 
             }
         });
@@ -138,16 +142,30 @@ public class Fragment1 extends Fragment {
         btnPoisonous.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(getActivity(), "Poisonous", Toast.LENGTH_SHORT).show();
+                getActivity().setTitle(Html.fromHtml("<font color = \"#FFFFFF\">" + "Toxic plants" + "</font>"));
+
+                Fragment fragment = new FragmentToxic();
+                FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
+                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+                fragmentTransaction.replace(R.id.fragment_Container, fragment);
+                fragmentTransaction.addToBackStack(null);
+                fragmentTransaction.commit();
             }
         });
     }
-    public void btnEdiblee(){
+    public void btnEdible(){
         initViews();
         btnEdible.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(getActivity(), "Edible", Toast.LENGTH_SHORT).show();
+                getActivity().setTitle(Html.fromHtml("<font color = \"#FFFFFF\">" + "Edible medicinal herbs" + "</font>"));
+
+                Fragment fragment = new FragmentEdible();
+                FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
+                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+                fragmentTransaction.replace(R.id.fragment_Container, fragment);
+                fragmentTransaction.addToBackStack(null);
+                fragmentTransaction.commit();
             }
         });
     }

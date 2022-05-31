@@ -225,12 +225,13 @@
                 android:textSize="14sp"></TextView>
 
             <TextView
-                android:layout_width="60dp"
+                android:layout_width="wrap_content"
                 android:layout_height="20dp"
                 android:layout_below="@id/leaf4"
                 android:layout_centerHorizontal="true"
                 android:gravity="center"
-                android:text="Drugs"
+                android:text="Mind-Altering
+"
                 android:textSize="14sp"></TextView>
 
             <TextView
@@ -241,7 +242,7 @@
                 android:layout_alignParentEnd="true"
                 android:layout_marginRight="22dp"
                 android:gravity="center"
-                android:text="Poisonous"
+                android:text="Toxic"
                 android:textSize="14sp"></TextView>
 
             <TextView

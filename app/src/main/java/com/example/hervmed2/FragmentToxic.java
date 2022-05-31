@@ -14,13 +14,14 @@ import android.view.ViewGroup;
 import java.util.ArrayList;
 
 
-public class FragmentCommon extends Fragment implements HerbAdapter.OnNoteListenerHerb{
+public class FragmentToxic extends Fragment implements HerbAdapter.OnNoteListenerHerb{
 
     ArrayList<HerbItems> herbItems = new ArrayList<>();
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+        // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.activity_recyclerview_container, container, false);
 
         RecyclerView popularRecView = view.findViewById(R.id.reyclerViewContainer);
@@ -32,17 +33,15 @@ public class FragmentCommon extends Fragment implements HerbAdapter.OnNoteListen
     }
 
     private ArrayList<HerbItems> initHerb(){
-        herbItems.add(new HerbItems(R.drawable.bael, "Bael", "Aegle marmelos", R.string.bael_content));
-        herbItems.add(new HerbItems(R.drawable.catnip, "Catnip", "Nepeta cataria", R.string.catnip_content));
-        herbItems.add(new HerbItems(R.drawable.cinnamon, "Cinnamon", "Cinnamomum verum",R.string.cinnamon_content));
-        herbItems.add(new HerbItems(R.drawable.henna, "Henna", "Lawsonia inermis", R.string.henna_content));
-        herbItems.add(new HerbItems(R.drawable.lavender, "Lavender", "Tagetes", R.string.lavender_content));
-        herbItems.add(new HerbItems(R.drawable.marigold, "Marigold", "Perilla frutescens var. crispa", R.string.marigold_content));
-        herbItems.add(new HerbItems(R.drawable.neem, "Neem", "Azadirachta indica",R.string.neem_content));
-        herbItems.add(new HerbItems(R.drawable.peppermint, "Peppermint", "Mentha × piperita", R.string.peppermint_content));
-        herbItems.add(new HerbItems(R.drawable.rosemary, "Rosemary", "Salvia rosmarinus",R.string.rosemary_content));
-
-
+        herbItems.add(new HerbItems(R.drawable.borage, "Borage", "Borago officinalis", R.string.borage_content));
+        herbItems.add(new HerbItems(R.drawable.chaparral, "Chaparral", "Larrea tridentata", R.string.chaparral_content));
+        herbItems.add(new HerbItems(R.drawable.comfrey, "Comfrey", "Symphytum",R.string.comfrey_content));
+        herbItems.add(new HerbItems(R.drawable.ephedra, "Ephedra", "Ephedra equisetina Bge.", R.string.ephedra_content));
+        herbItems.add(new HerbItems(R.drawable.germander, "Germander", "Teucrium", R.string.germander_content));
+        herbItems.add(new HerbItems(R.drawable.golden_ragwort, "Golden ragwort", "Packera aurea", R.string.golden_ragwort_content));
+        herbItems.add(new HerbItems(R.drawable.pennyroyal, "Pennyroyal", "Mentha pulegium",R.string.pennyroyal_content));
+        herbItems.add(new HerbItems(R.drawable.sassafras, "Sassafras", "Sassafras albidum", R.string.sassafras_content));
+        herbItems.add(new HerbItems(R.drawable.sweet_flag, "Sweet flag", "Nicotiana tabacum",R.string.sweet_flag_content));
         return herbItems;
     }
 
