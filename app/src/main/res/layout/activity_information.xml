@@ -7,23 +7,58 @@
     tools:context=".InformationActivity"
     android:id="@+id/parent">
 
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".315"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="1"/>
 
 
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="1"/>
 
     <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="230dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:id="@+id/imageHerb"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toEndOf="@id/guide4"
+        app:layout_constraintStart_toStartOf="@id/guide3"
+        app:layout_constraintTop_toTopOf="@id/guide1"
+        app:layout_constraintBottom_toBottomOf="@id/guide2"/>
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="460dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/imageHerb">
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintEnd_toEndOf="@id/guide4"
+        app:layout_constraintStart_toStartOf="@id/guide3"
+        app:layout_constraintTop_toBottomOf="@id/guide2"
+        app:layout_constraintBottom_toBottomOf="@id/guide5">
 
         <TextView
             android:id="@+id/titleHerb"
@@ -31,7 +66,6 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:text="Title of item"
-
             android:textSize="30sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
@@ -53,9 +87,10 @@
         <androidx.core.widget.NestedScrollView
             android:id="@+id/scrollView2"
             android:layout_width="match_parent"
-            android:layout_height="400dp"
+            android:layout_height="0dp"
             android:paddingHorizontal="10dp"
             android:paddingTop="5dp"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/descriptionHerb">

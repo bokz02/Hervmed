@@ -19,15 +19,23 @@
         android:orientation="horizontal"
         app:layout_constraintGuide_percent=".15"/>
 
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".0675"/>
+
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/searchBar"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="0dp"
         android:layout_marginBottom="10dp"
         android:background="@color/blueBackground"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/guide3"
         app:layout_constraintBottom_toBottomOf="@id/guide1">
 
         <RelativeLayout
@@ -57,6 +65,7 @@
                 android:layout_width="260dp"
                 android:layout_height="100dp"
                 android:background="@null"
+                android:maxLength="20"
                 android:hint="Search plants"
                 android:inputType="text"
                 android:paddingStart="15dp"
