@@ -65,9 +65,9 @@
                 android:layout_width="260dp"
                 android:layout_height="100dp"
                 android:background="@null"
-                android:maxLength="20"
-                android:hint="Search plants"
+                android:hint="Search a plant"
                 android:inputType="text"
+                android:maxLength="20"
                 android:paddingStart="15dp"
                 android:textSize="14sp" />
 
