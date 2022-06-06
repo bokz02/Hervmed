@@ -1,6 +1,8 @@
 package com.example.hervmed2;
 
 import android.content.Context;
+import android.content.Intent;
+import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -10,6 +12,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
@@ -19,6 +22,7 @@ public class HerbAdapter extends RecyclerView.Adapter<HerbAdapter.HerbViewHolder
     ArrayList<HerbItems> herbList;
     List<HerbItems> herbItemsFull;
     private final OnNoteListenerHerb onNoteListenerHerb;
+    Context context;
 
 
     public static class HerbViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
@@ -35,6 +39,7 @@ public class HerbAdapter extends RecyclerView.Adapter<HerbAdapter.HerbViewHolder
             textView2 = itemView.findViewById(R.id.description);
             imageView = itemView.findViewById(R.id.imageView);
 
+
             this.onNoteListenerHerb = onNoteListenerHerb;
 
             itemView.setOnClickListener(this);
@@ -47,6 +52,7 @@ public class HerbAdapter extends RecyclerView.Adapter<HerbAdapter.HerbViewHolder
     }
 
     public HerbAdapter (ArrayList<HerbItems> herbItems, OnNoteListenerHerb onNoteListenerHerb){
+
         this.herbList = herbItems;
         this.onNoteListenerHerb = onNoteListenerHerb;
         herbItemsFull = new ArrayList<>(herbItems);
@@ -66,10 +72,10 @@ public class HerbAdapter extends RecyclerView.Adapter<HerbAdapter.HerbViewHolder
     @Override
     public void onBindViewHolder(@NonNull HerbViewHolder holder, int position) {
 
-
         holder.textView1.setText(herbList.get(position).getTitle());
         holder.textView2.setText(herbList.get(position).getDescription());
         holder.imageView.setImageResource(herbList.get(position).getImgResource());
+
 
     }
 

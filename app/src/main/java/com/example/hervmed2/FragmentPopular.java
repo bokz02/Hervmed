@@ -52,7 +52,7 @@ public class FragmentPopular extends Fragment implements HerbAdapter.OnNoteListe
 
     @Override
     public void onNoteClick(int position) {
-        Intent intent = new Intent(getActivity(), InformationActivity.class);
+        Intent intent = new Intent(getActivity(), InformationActivity2.class);
         intent.putExtra("Example", herbItems.get(position));
 
 

@@ -19,7 +19,7 @@
         <item name="colorPrimary">@color/black_overlay</item>
         <item name="android:background">@drawable/transparent_action_bar</item>
 
-        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <item name="android:statusBarColor" >?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
     </style>
 
@@ -36,6 +36,10 @@
 
     <style name="TextAppearance.AppCompat.MaterialComponents.Light.Title" parent="@android:style/TextAppearance">
         <item name="android:textSize">30sp</item>
+    </style>
+
+    <style name="hervmed4" parent="Theme.MaterialComponents.Light.NoActionBar">
+
     </style>
 
 

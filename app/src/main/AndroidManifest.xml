@@ -10,6 +10,10 @@
         android:supportsRtl="false"
         android:theme="@style/Theme.Hervmed2">
         <activity
+            android:name=".InformationActivity2"
+            android:exported="false"/>
+
+        <activity
             android:name=".InformationActivity"
             android:exported="false" />
         <activity
@@ -23,6 +27,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
 
     </application>
 

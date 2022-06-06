@@ -14,6 +14,8 @@ import androidx.fragment.app.Fragment;
 
 public class Fragment3 extends Fragment {
 
+    View view;
+
     //Remove action bar animation when hiding
     @SuppressLint("RestrictedApi")
     @Override
@@ -30,13 +32,13 @@ public class Fragment3 extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        ViewGroup rootView = (ViewGroup) inflater.inflate(R.layout.fragment3,container,false);
+        view = inflater.inflate(R.layout.fragment3,container,false);
 
         onStop();
         ((MainActivity) requireActivity()).hideActionBarInFragment();
 
 
-        return rootView;
+        return view;
     }
 
 
