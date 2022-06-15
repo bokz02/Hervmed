@@ -44,13 +44,15 @@
         <entry key="..\:/JavaProjects/Hervmed2/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.137" />
         <entry key="..\:/JavaProjects/Hervmed2/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.282" />
         <entry key="..\:/JavaProjects/Midwinter/app/src/main/res/drawable/ic_baseline_favorite_24.xml" value="0.23" />
-        <entry key="..\:/JavaProjects/Midwinter/app/src/main/res/layout-sw320dp/activity_information.xml" value="0.27181467181467184" />
-        <entry key="..\:/JavaProjects/Midwinter/app/src/main/res/layout/activity_information.xml" value="0.9118942731277533" />
+        <entry key="..\:/JavaProjects/Midwinter/app/src/main/res/layout-sw320dp/activity_information.xml" value="0.2970464135021097" />
+        <entry key="..\:/JavaProjects/Midwinter/app/src/main/res/layout/activity_information.xml" value="0.2970464135021097" />
+        <entry key="..\:/JavaProjects/Midwinter/app/src/main/res/layout/activity_information2.xml" value="0.275" />
         <entry key="..\:/JavaProjects/Midwinter/app/src/main/res/layout/activity_main.xml" value="0.275" />
         <entry key="..\:/JavaProjects/Midwinter/app/src/main/res/layout/activity_recyclerview_container.xml" value="0.275" />
         <entry key="..\:/JavaProjects/Midwinter/app/src/main/res/layout/fragment1.xml" value="0.27181467181467184" />
         <entry key="..\:/JavaProjects/Midwinter/app/src/main/res/layout/fragment2.xml" value="0.25" />
         <entry key="..\:/JavaProjects/Midwinter/app/src/main/res/layout/fragment3.xml" value="0.275" />
+        <entry key="..\:/JavaProjects/Midwinter/app/src/main/res/layout/fragment_information.xml" value="0.275" />
         <entry key="..\:/JavaProjects/Midwinter/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.196" />
       </map>
     </option>
