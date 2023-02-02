@@ -25,7 +25,22 @@
     \n<b><font size="18">Side effects</font></b>
     <font size="14">\nChamomile contains a small amount of coumarin, which may have very mild blood thinning effects, but usually just in high doses for long periods of time. Stop using chamomile two weeks before surgery due to concerns about its possible interactions with anesthetic drugs.</font>
     \n\n</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
 
+    <string name="ourVision">To be the most beneficial herbal system application by leading the modernization of traditional medicine through innovation and insightful research, while providing effective, safe, and dependable products.</string>
+    <string name="ourMission">Through herbal medicine innovation and modernization, we dedicate ourselves to humanity\'s desire for longer, better, and happier lives.</string>
+    <string name="ourValues">To achieve our Vision and Mission, we will create the most beneficial Herbal Medicine system application for patients, communities, regular folks, and herbal medicine enthusiasts. We will give an informative, dependable, useful, and trustworthy system application.We affirm our values of Integrity, Leadership, Innovation, Performance, Teamwork, User Focus, Respect for People, and the Community.</string>
+
+
+    <string name="helpCenter"><font size="18"><b>Help Center\n</b></font><i>Hi, how can we help you?\n\n</i><b>1. Does the given examples of herbal medicines is approved by professionals</b><i>\n- Resources about the medicines came from a highly known references and is approved by the professionals.</i>
+
+        <b>\n\n2. What can I do if some allergic reaction happens? </b><i>\n-If an allergic reaction happens, see a physician immediately.\n</i>
+        <b>\n\n3. How can I recommend this application to others?</b><i>\n- You recommend this application by sharing the link provided.</i>
+        <b>\n\n4.Can I take herbal formulas in place of my medications?</b><i>\n- It can be very dangerous to abruptly discontinue pharmaceuticals and extremely difficult for a lay person to choose an acceptable alternative(s) to their treatment. Our naturopathic doctors require patients consult with their prescribing physician(s) regarding any changes to their medications. We are often able to support patients who are seeking to reduce their pharmaceutical use – this is a process and safety is most important.</i>
+
+        <b>\n\n5.Is herbal medicine safe? </b><i>\n- Yes, when administered properly. Herbs (plant/botanical medicines) have a profound effect on the human body. Comprised of thousands of medicinal constituents, herbs can affect multiple body systems in targeted ways while also working synergistically with the body for a holistic treatment approach – herbal medicine comes with minimal to no side effects in the process.</i>
+
+        <b>\n\nDISCLAIMER</b>\n\nOnly general health information was offered by HervMed. It should not be used in place of medical care, diagnosis, or treatment for any illness or issue.
+        \n\nAny queries you may have about your personal health must to be directed at your personal doctor or other healthcare professional.
+        \n\nThe HervMed app\'s purpose is to assist patients in saving money through use.\n\n
+    </string>
 </resources>

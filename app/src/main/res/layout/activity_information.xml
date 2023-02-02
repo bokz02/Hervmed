@@ -43,15 +43,20 @@
         android:orientation="horizontal"
         app:layout_constraintGuide_percent="1"/>
 
+
+
+
     <ImageView
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:scaleType="fitXY"
         android:id="@+id/imageHerb"
-        app:layout_constraintEnd_toEndOf="@id/guide4"
-        app:layout_constraintStart_toStartOf="@id/guide3"
-        app:layout_constraintTop_toTopOf="@id/guide1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="@id/guide2"/>
+
+
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="0dp"
@@ -84,6 +89,8 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/titleHerb" />
+
+
 
         <androidx.core.widget.NestedScrollView
             android:id="@+id/scrollView2"

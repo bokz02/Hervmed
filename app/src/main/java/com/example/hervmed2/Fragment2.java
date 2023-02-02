@@ -53,6 +53,14 @@ public class Fragment2 extends Fragment implements HerbAdapter.OnNoteListenerHer
         return view;
     }
 
+    @Override
+    public void onResume() {
+        super.onResume();
+
+        ((MainActivity) requireActivity()).hideActionBarInFragment(); // hide action bar in fragment
+
+    }
+
     @SuppressLint("NotifyDataSetChanged")
     public void sortArrayList(){
         Collections.sort(herbItems, new Comparator<HerbItems>() {
@@ -135,6 +143,7 @@ public class Fragment2 extends Fragment implements HerbAdapter.OnNoteListenerHer
         herbItems.add(new HerbItems(R.drawable.valerian, "Valerian", "Valeriana officinalis", R.string.valerian_content));
         herbItems.add(new HerbItems(R.drawable.white_clover, "White clover", "Trifolium repens",R.string.white_clover_content));
         herbItems.add(new HerbItems(R.drawable.yerba_buena, "Yerba buena", "Combretum indicum", R.string.yerba_buena_content));
+
         return herbItems;
     }
 

@@ -9,6 +9,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.annotation.SuppressLint;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
+import android.media.MediaPlayer;
 import android.view.WindowManager;
 import android.os.Bundle;
 import android.view.MenuItem;
@@ -21,6 +22,7 @@ public class MainActivity extends AppCompatActivity{
 
     BottomNavigationView bottomNavigationView;
     RecyclerView popularRecView;
+    MediaPlayer mediaPlayer;
 
 
     public void fragmentLoader(Fragment fragment) {
@@ -44,11 +46,19 @@ public class MainActivity extends AppCompatActivity{
                 .setCancelable(false)
                 .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int id) {
-                        finish();
+                        if(mediaPlayer.isPlaying()){
+                            mediaPlayer.stop();
+                            finish();
+                        }
                     }
                 })
                 .setNegativeButton("No", null)
                 .show();
+    }
+
+    public void initialize(){
+        mediaPlayer = MediaPlayer.create(getApplicationContext(), R.raw.hermed_music);
+        mediaPlayer.start();
     }
 
 
@@ -61,10 +71,11 @@ public class MainActivity extends AppCompatActivity{
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN); //enable full screen
 
+        MyMediaPlayer.getMediaPlayerInstance().playAudioFile(this, R.raw.hermed_music);
 
+        //initialize();
 
         bottomNavigationView = (BottomNavigationView) findViewById(R.id.bottomNavigation);
-        popularRecView = (RecyclerView) findViewById(R.id.reyclerViewContainer);
 
         fragmentLoader(new Fragment1());
 
